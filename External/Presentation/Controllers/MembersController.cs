@@ -1,3 +1,4 @@
+using Mapster;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using SportClubManager.Core.Application.Members.Commands;
@@ -67,7 +68,7 @@ namespace SportClubManager.External.Presentation.Controllers
         [HttpPost]
         public async Task<ActionResult<Member>> PostMember(CreateMemberRequest request, CancellationToken cancellationToken)
         {
-            var command = new CreateMemberCommand(request.FirstName, request.LastName, request.Email);
+            var command = request.Adapt<CreateMemberCommand>();
 
             var memberId = await _sender.Send(command, cancellationToken);
 
