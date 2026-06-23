@@ -1,11 +1,14 @@
 using Mapster;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using SportClubManager.Core.Application.Members.Commands;
+using SportClubManager.Core.Application.Members.Commands.CreateMember;
+using SportClubManager.Core.Application.Members.Commands.DeleteMember;
+using SportClubManager.Core.Application.Members.Commands.UpdateMember;
 using SportClubManager.Core.Application.Members.Queries;
+using SportClubManager.Core.Application.Members.Queries.GetMemberById;
+using SportClubManager.Core.Application.Members.Queries.GetMembers;
 using SportClubManager.Core.Domain.Exceptions;
 using SportClubManager.Core.Domain.Models;
-using SportClubManager.External.Infrastructure;
 
 namespace SportClubManager.External.Presentation.Controllers
 {

@@ -2,7 +2,7 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using SportClubManager.External.Infrastructure;
 
-namespace SportClubManager.Core.Application.Members.Queries;
+namespace SportClubManager.Core.Application.Members.Queries.GetMembers;
 
 internal sealed class GetMembersQueryHandler(ApplicationDbContext context) : IRequestHandler<GetMembersQuery, IEnumerable<MemberResponse>>
 {

@@ -2,7 +2,7 @@ using MediatR;
 using SportClubManager.Core.Domain.Exceptions;
 using SportClubManager.External.Infrastructure;
 
-namespace SportClubManager.Core.Application.Members.Queries;
+namespace SportClubManager.Core.Application.Members.Queries.GetMemberById;
 
 internal sealed class GetMemberByIdQueryHandler(ApplicationDbContext context) : IRequestHandler<GetMemberByIdQuery, MemberResponse>
 {

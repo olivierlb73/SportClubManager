@@ -4,7 +4,7 @@ using SportClubManager.Core.Domain.Exceptions;
 using SportClubManager.Core.Domain.Models;
 using SportClubManager.External.Infrastructure;
 
-namespace SportClubManager.Core.Application.Members.Commands;
+namespace SportClubManager.Core.Application.Members.Commands.CreateMember;
 
 internal sealed class CreateMemberCommandHandler(ApplicationDbContext context) : IRequestHandler<CreateMemberCommand, long?>
 {

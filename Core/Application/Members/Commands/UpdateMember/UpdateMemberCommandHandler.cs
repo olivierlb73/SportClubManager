@@ -4,7 +4,7 @@ using SportClubManager.Core.Domain.Exceptions;
 using SportClubManager.Core.Domain.Models;
 using SportClubManager.External.Infrastructure;
 
-namespace SportClubManager.Core.Application.Members.Commands;
+namespace SportClubManager.Core.Application.Members.Commands.UpdateMember;
 
 internal sealed class UpdateMemberCommandHandler(ApplicationDbContext context) : IRequestHandler<UpdateMemberCommand>
 {

@@ -4,7 +4,7 @@ using SportClubManager.Core.Domain.Exceptions;
 using SportClubManager.Core.Domain.Models;
 using SportClubManager.External.Infrastructure;
 
-namespace SportClubManager.Core.Application.Members.Commands;
+namespace SportClubManager.Core.Application.Members.Commands.DeleteMember;
 
 internal sealed class DeleteMemberCommandHandler(ApplicationDbContext context) : IRequestHandler<DeleteMemberCommand>
 {
