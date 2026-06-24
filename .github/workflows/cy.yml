@@ -19,3 +19,7 @@ jobs:
         run: dotnet build --no-restore
       - name: Test with the dotnet CLI
         run: dotnet test --no-build
+      - name: Publish App to Docker
+        run: dotnet publish --os linux --arch x64 /t:PublishContainer
+      - name: Run App in Docker
+        run: docker run --name sportclubmanager -p 8080:8080 sportclubmanager      
