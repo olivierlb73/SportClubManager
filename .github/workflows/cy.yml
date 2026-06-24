@@ -22,7 +22,7 @@ jobs:
       - name: Publish App to Docker
         run: dotnet publish --os linux --arch x64 /t:PublishContainer
       - name: Run App in Docker
-        run: docker run --name sportclubmanager -p 8080:8080 sportclubmanager
+        run: docker run --name sportclubmanager -p 8080:8080 sportclubmanager &
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
