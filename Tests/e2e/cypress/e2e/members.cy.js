@@ -13,7 +13,6 @@ context("Test api/members", () => {
         })
     })
 
-
     it("get the list of members", () => {
         cy.request("GET", "/api/members").then((response) => {
             expect(response.status).to.eq(200)
