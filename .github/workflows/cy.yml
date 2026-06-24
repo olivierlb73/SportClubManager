@@ -27,6 +27,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '24.x'
-      - run : cd Tests/e2e
-      - run: npm install cypress --save-dev
-      - run: npx cypress run
+      - name: Run Cypress e2e
+        run : |
+          cd ./Tests/e2e
+          npm install cypress --save-dev
+          npx cypress run
