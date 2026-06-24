@@ -1,7 +1,7 @@
 using SportClubManager.Core.Application.Members.Commands.CreateMember;
-using SportClubManager.UnitTests.TestHelpers;
+using SportClubManager.UnitTests.External.Infrastructure;
 
-namespace SportClubManager.UnitTests.Members;
+namespace SportClubManager.UnitTests.Core.Application.Members.Commands.CreateMember;
 
 public class CreateMemberCommandHandlerTests
 {

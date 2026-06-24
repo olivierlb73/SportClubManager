@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using SportClubManager.External.Infrastructure;
 
-namespace SportClubManager.UnitTests.TestHelpers;
+namespace SportClubManager.UnitTests.External.Infrastructure;
 
 internal static class ApplicationDbContextFactory
 {

@@ -1,8 +1,8 @@
 using SportClubManager.Core.Application.Members.Queries.GetMembers;
 using SportClubManager.Core.Domain.Models;
-using SportClubManager.UnitTests.TestHelpers;
+using SportClubManager.UnitTests.External.Infrastructure;
 
-namespace SportClubManager.UnitTests.Members;
+namespace SportClubManager.UnitTests.Core.Application.Members.Queries.GetMembers;
 
 public class GetMembersQueryHandlerTests
 {
