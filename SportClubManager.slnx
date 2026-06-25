@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Tests/" />
+  <Folder Name="/Tests/unit/">
+    <Project Path="Tests/unit/SportClubManager.UnitTests/SportClubManager.UnitTests.csproj" />
+  </Folder>
+  <Project Path="SportClubManager.csproj" />
+</Solution>
