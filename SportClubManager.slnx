@@ -3,5 +3,8 @@
   <Folder Name="/Tests/unit/">
     <Project Path="Tests/unit/SportClubManager.UnitTests/SportClubManager.UnitTests.csproj" />
   </Folder>
+  <Folder Name="/Tests/specs/">
+    <Project Path="Tests/specs/ReqnrollProject/ReqnrollProject.csproj" />
+  </Folder>
   <Project Path="SportClubManager.csproj" />
 </Solution>
