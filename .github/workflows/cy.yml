@@ -17,17 +17,17 @@ jobs:
         run: dotnet restore
       - name: Build
         run: dotnet build --no-restore
-      - name: Test with the dotnet CLI
+      - name: Run Unit Tests with Nunit and Integration Tests with Reqnroll
         run: dotnet test --no-build
-      - name: Publish App to Docker
-        run: dotnet publish --os linux --arch x64 /t:PublishContainer
-      - name: Run App in Docker
-        run: docker run --name sportclubmanager -p 5035:8080 sportclubmanager &
-      - name: Use Node.js
+      - name: Publish and Run App to Docker
+        run: |
+          dotnet publish --os linux --arch x64 /t:PublishContainer
+          docker run --name sportclubmanager -p 5035:8080 sportclubmanager &
+      - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '24.x'
-      - name: Run Cypress e2e
+      - name: Run Cypress e2e Tests
         run : |
           cd ./Tests/e2e
           npm install cypress --save-dev
